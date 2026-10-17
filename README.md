@@ -174,7 +174,7 @@ Open `http://localhost:8501`.
 ## Running Notebooks
 Launch Jupyter to explore the 6 educational notebooks:
 ```powershell
-conda run -p "D:\Hackoctober_challenge_2\.conda" jupyter lab
+conda run -p "Environment_Folder\.conda" jupyter lab
 ```
 Available Notebooks:
 1. `01_environment_setup.ipynb` — Environment inspection, paths, and local caches.
@@ -189,7 +189,7 @@ Available Notebooks:
 ## Testing
 The complete test suite runs 100% offline without requiring an active OpenRouter API key:
 ```powershell
-conda run -p "D:\Hackoctober_challenge_2\.conda" pytest
+conda run -p "Environment_Folder\.conda" pytest
 ```
 Output:
 ```text
