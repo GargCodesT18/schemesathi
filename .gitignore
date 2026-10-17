@@ -1,0 +1,49 @@
+# Environment & Sensitive Credentials (CRITICAL)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Project Python/Conda environment
+.conda/
+env/
+venv/
+.venv/
+
+# Project Caches
+.cache/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Jupyter Checkpoints
+.ipynb_checkpoints/
+
+# Node / React Frontend
+node_modules/
+frontend/node_modules/
+frontend/.vite/
+
+# UI & Secrets
+.streamlit/secrets.toml
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.log
+
+# Build Artifacts
+dist/
+build/
+*.egg-info/
+
+# Retain pre-built frontend bundle so Python can serve it directly in production
+!frontend/dist/
+!frontend/dist/**
+

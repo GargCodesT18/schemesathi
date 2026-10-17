@@ -1,0 +1,775 @@
+[
+  {
+    "id": "pm-kisan",
+    "name": "Pradhan Mantri Kisan Samman Nidhi",
+    "short_name": "PM-KISAN",
+    "description": "Central sector scheme providing income support to all landholding farmer families across the country to supplement their financial needs for agricultural inputs and domestic requirements.",
+    "category": "Agriculture",
+    "benefits": "Direct income benefit of ₹6,000 per year transferred in three equal installments of ₹2,000 directly into the bank accounts of eligible farmer families.",
+    "eligibility_rules": [
+      {
+        "field": "occupation",
+        "operator": "equals",
+        "value": "farmer",
+        "description": "Applicant must be an agricultural cultivator/farmer"
+      },
+      {
+        "field": "farmer_status",
+        "operator": "equals",
+        "value": true,
+        "description": "Applicant must hold verified farmer status"
+      }
+    ],
+    "required_documents": [
+      "Aadhaar Card",
+      "Land Ownership Documents (Khasra/Khatauni)",
+      "Bank Account linked with Aadhaar",
+      "Active Mobile Number"
+    ],
+    "application_information": "Apply online at the official PM-KISAN Portal (pmkisan.gov.in) or visit nearest Common Service Center (CSC) / District Agriculture Office.",
+    "state_scope": [
+      "All-India"
+    ],
+    "source_name": "Ministry of Agriculture and Farmers Welfare, Government of India",
+    "source_url": "https://pmkisan.gov.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "pm-kmy",
+    "name": "Pradhan Mantri Kisan Maandhan Yojana",
+    "short_name": "PM-KMY",
+    "description": "Old age pension scheme for small and marginal farmers providing social security when they reach 60 years of age.",
+    "category": "Agriculture",
+    "benefits": "Guaranteed minimum monthly pension of ₹3,000 upon reaching 60 years of age.",
+    "eligibility_rules": [
+      {
+        "field": "occupation",
+        "operator": "equals",
+        "value": "farmer",
+        "description": "Must be a small or marginal farmer"
+      },
+      {
+        "field": "age",
+        "operator": "greater_than_or_equal",
+        "value": 18,
+        "description": "Entry age must be at least 18 years"
+      },
+      {
+        "field": "age",
+        "operator": "less_than_or_equal",
+        "value": 40,
+        "description": "Entry age must not exceed 40 years"
+      }
+    ],
+    "required_documents": [
+      "Aadhaar Card",
+      "Savings Bank Account / Jan Dhan Account with IFSC",
+      "Copy of land revenue record / Patta"
+    ],
+    "application_information": "Enroll through Village Level Entrepreneurs (VLEs) at any Common Service Center (CSC) or online on the Maandhan portal.",
+    "state_scope": [
+      "All-India"
+    ],
+    "source_name": "Ministry of Agriculture and Farmers Welfare & LIC",
+    "source_url": "https://maandhan.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "pmay-g",
+    "name": "Pradhan Mantri Awas Yojana - Gramin",
+    "short_name": "PMAY-G",
+    "description": "Social welfare programme providing pucca houses with basic amenities to all houseless households and those living in kutcha and dilapidated houses in rural areas.",
+    "category": "Housing",
+    "benefits": "Financial assistance of ₹1,20,000 in plain areas and ₹1,30,000 in hilly/difficult areas along with 90/95 days of unskilled labor wages under MGNREGA.",
+    "eligibility_rules": [
+      {
+        "field": "rural_or_urban",
+        "operator": "equals",
+        "value": "rural",
+        "description": "Beneficiary must reside in a rural area"
+      },
+      {
+        "field": "annual_income",
+        "operator": "less_than_or_equal",
+        "value": 300000,
+        "description": "Annual household income must be within economically weaker parameters (<= ₹3,00,000)"
+      }
+    ],
+    "required_documents": [
+      "Aadhaar Number of all family members",
+      "Bank Account details",
+      "MGNREGA registered job card number",
+      "Swachh Bharat Mission (SBM) registration number"
+    ],
+    "application_information": "Beneficiaries are identified using SECC list validated by Gram Sabha. Registration assisted via Gram Panchayat or Awaas+ portal.",
+    "state_scope": [
+      "All-India"
+    ],
+    "source_name": "Ministry of Rural Development, Government of India",
+    "source_url": "https://pmayg.nic.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "pmay-u",
+    "name": "Pradhan Mantri Awas Yojana - Urban",
+    "short_name": "PMAY-U",
+    "description": "Mission addressing urban housing shortage among EWS/LIG and MIG categories by ensuring a pucca house to eligible urban households.",
+    "category": "Housing",
+    "benefits": "Interest subsidy up to 6.5% on housing loans or direct central assistance of ₹1.5 lakh for new construction/enhancement.",
+    "eligibility_rules": [
+      {
+        "field": "rural_or_urban",
+        "operator": "equals",
+        "value": "urban",
+        "description": "Beneficiary family must reside in a statutory urban town"
+      },
+      {
+        "field": "annual_income",
+        "operator": "less_than_or_equal",
+        "value": 600000,
+        "description": "Annual household income must not exceed ₹6,000,000 for EWS/LIG housing subsidy"
+      }
+    ],
+    "required_documents": [
+      "Aadhaar Card",
+      "Income Certificate / Salary Slip / ITR",
+      "Bank Account Statement",
+      "Affidavit confirming no pucca house owned across India"
+    ],
+    "application_information": "Apply online at pmaymis.gov.in or visit designated Common Service Centers (CSCs) or Urban Local Body office.",
+    "state_scope": [
+      "All-India"
+    ],
+    "source_name": "Ministry of Housing and Urban Affairs, Government of India",
+    "source_url": "https://pmaymis.gov.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "pmuy",
+    "name": "Pradhan Mantri Ujjwala Yojana 2.0",
+    "short_name": "PMUY",
+    "description": "Flagship scheme providing clean cooking LPG connections to women from economically disadvantaged families without upfront security deposit.",
+    "category": "Women",
+    "benefits": "Deposit-free LPG connection, first refill and hotplate (stove) provided free of cost, plus ongoing targeted subsidy per cylinder.",
+    "eligibility_rules": [
+      {
+        "field": "gender",
+        "operator": "equals",
+        "value": "female",
+        "description": "Applicant must be an adult woman of the household"
+      },
+      {
+        "field": "age",
+        "operator": "greater_than_or_equal",
+        "value": 18,
+        "description": "Applicant must be at least 18 years old"
+      },
+      {
+        "field": "annual_income",
+        "operator": "less_than_or_equal",
+        "value": 250000,
+        "description": "Household income should fall under low-income criteria (<= ₹2,50,000)"
+      }
+    ],
+    "required_documents": [
+      "Aadhaar card of applicant and adult family members",
+      "Ration Card or BPL certificate proving household composition",
+      "Bank Account details (Jan Dhan or Savings)"
+    ],
+    "application_information": "Submit application directly at any authorized LPG distributor (Indane, Bharatgas, HP Gas) or apply online at pmuy.gov.in.",
+    "state_scope": [
+      "All-India"
+    ],
+    "source_name": "Ministry of Petroleum and Natural Gas, Government of India",
+    "source_url": "https://www.pmuy.gov.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "apy",
+    "name": "Atal Pension Yojana",
+    "short_name": "APY",
+    "description": "National pension scheme targeted primarily at the unorganized sector workers to provide self-funded retirement security.",
+    "category": "Senior Citizens",
+    "benefits": "Guaranteed minimum monthly pension of ₹1,000, ₹2,000, ₹3,000, ₹4,000, or ₹5,000 starting from the age of 60 based on contribution.",
+    "eligibility_rules": [
+      {
+        "field": "age",
+        "operator": "greater_than_or_equal",
+        "value": 18,
+        "description": "Applicant must be at least 18 years of age at joining"
+      },
+      {
+        "field": "age",
+        "operator": "less_than_or_equal",
+        "value": 40,
+        "description": "Applicant must not exceed 40 years of age at joining"
+      }
+    ],
+    "required_documents": [
+      "Aadhaar Card",
+      "Savings Bank Account / Post Office Account",
+      "Active Mobile Number"
+    ],
+    "application_information": "Enroll through any public or private sector commercial bank or post office where you hold a savings account.",
+    "state_scope": [
+      "All-India"
+    ],
+    "source_name": "Pension Fund Regulatory and Development Authority (PFRDA)",
+    "source_url": "https://www.npscra.nsdl.co.in/scheme-details.php",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "ignoaps",
+    "name": "Indira Gandhi National Old Age Pension Scheme",
+    "short_name": "IGNOAPS",
+    "description": "Non-contributory social security pension for senior citizens living below the poverty line.",
+    "category": "Senior Citizens",
+    "benefits": "Monthly central pension of ₹200 to ₹500 (often supplemented to ₹1,000-₹2,500 by state government top-ups).",
+    "eligibility_rules": [
+      {
+        "field": "age",
+        "operator": "greater_than_or_equal",
+        "value": 60,
+        "description": "Applicant must be a senior citizen aged 60 years or above"
+      },
+      {
+        "field": "annual_income",
+        "operator": "less_than_or_equal",
+        "value": 200000,
+        "description": "Must belong to Below Poverty Line (BPL) or low-income threshold"
+      }
+    ],
+    "required_documents": [
+      "Age proof (Aadhaar / Voter ID / Birth Certificate)",
+      "BPL Card or Income Certificate from Tehsildar",
+      "Bank / Post Office Passbook"
+    ],
+    "application_information": "Submit application form at the office of Block Development Officer (BDO) in rural areas or Sub-Divisional Magistrate (SDM) / Municipal Corporation in urban areas.",
+    "state_scope": [
+      "All-India"
+    ],
+    "source_name": "Ministry of Rural Development (NSAP Portal)",
+    "source_url": "https://nsap.nic.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "pm-svanidhi",
+    "name": "PM Street Vendor's AtmaNirbhar Nidhi",
+    "short_name": "PM SVANidhi",
+    "description": "Micro-credit facility providing affordable collateral-free working capital loans to urban street vendors to resume livelihoods.",
+    "category": "Employment",
+    "benefits": "Initial working capital loan up to ₹10,000, enhanced to ₹20,000 and ₹50,000 on timely repayment, with 7% interest subsidy.",
+    "eligibility_rules": [
+      {
+        "field": "occupation",
+        "operator": "in",
+        "value": [
+          "vendor",
+          "street vendor",
+          "hawker",
+          "small seller",
+          "trader"
+        ],
+        "description": "Must be engaged in vending or hawking goods/services"
+      },
+      {
+        "field": "rural_or_urban",
+        "operator": "equals",
+        "value": "urban",
+        "description": "Vending activity must be situated in urban or peri-urban locations"
+      }
+    ],
+    "required_documents": [
+      "Certificate of Vending / ID Card issued by Urban Local Body (ULB)",
+      "Aadhaar Card",
+      "Bank Account Passbook"
+    ],
+    "application_information": "Apply via PM SVANidhi portal (pmsvanidhi.mohua.gov.in) or mobile app, or via local Banking Correspondents / Common Service Centers.",
+    "state_scope": [
+      "All-India"
+    ],
+    "source_name": "Ministry of Housing and Urban Affairs, Government of India",
+    "source_url": "https://pmsvanidhi.mohua.gov.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "pmmy",
+    "name": "Pradhan Mantri Mudra Yojana",
+    "short_name": "PMMY",
+    "description": "Provides collateral-free institutional loans up to ₹10 lakh to micro and small non-corporate, non-farm enterprises.",
+    "category": "Entrepreneurship",
+    "benefits": "Collateral-free loans in three categories: Shishu (up to ₹50,000), Kishor (₹50,000 to ₹5 lakh), and Tarun (₹5 lakh to ₹10 lakh).",
+    "eligibility_rules": [
+      {
+        "field": "age",
+        "operator": "greater_than_or_equal",
+        "value": 18,
+        "description": "Applicant must be an adult citizen of at least 18 years"
+      },
+      {
+        "field": "employment_status",
+        "operator": "in",
+        "value": [
+          "self-employed",
+          "unemployed",
+          "entrepreneur",
+          "business"
+        ],
+        "description": "Applicant must be seeking self-employment or running a micro-enterprise"
+      }
+    ],
+    "required_documents": [
+      "Proof of Identity (Aadhaar/Voter ID/PAN)",
+      "Proof of Residence",
+      "Business Enterprise Registration / Udyam Certificate",
+      "Quotation of machinery/items to be purchased"
+    ],
+    "application_information": "Apply online at Udyamimitra portal (udyamimitra.in) or at any public/private commercial bank, RRB, or MFI.",
+    "state_scope": [
+      "All-India"
+    ],
+    "source_name": "Department of Financial Services, Ministry of Finance",
+    "source_url": "https://www.mudra.org.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "post-matric-scholarship",
+    "name": "Centrally Sponsored Post Matric Scholarship Scheme",
+    "short_name": "Post-Matric Scholarship",
+    "description": "Financial assistance to students pursuing post-matriculation or post-secondary courses to enable them to complete higher education.",
+    "category": "Education",
+    "benefits": "Full compulsory non-refundable fees reimbursement plus maintenance allowance up to ₹13,500 per year depending on course category.",
+    "eligibility_rules": [
+      {
+        "field": "student_status",
+        "operator": "equals",
+        "value": true,
+        "description": "Applicant must be currently enrolled in post-matric studies"
+      },
+      {
+        "field": "annual_income",
+        "operator": "less_than_or_equal",
+        "value": 250000,
+        "description": "Total family annual income must not exceed ₹2,50,000"
+      }
+    ],
+    "required_documents": [
+      "Aadhaar Card",
+      "Caste Certificate (if applicable for reserved schemes)",
+      "Income Certificate issued by designated state authority",
+      "Fee receipt and Mark sheet of qualifying examination",
+      "Bank Account details in student's name"
+    ],
+    "application_information": "Apply online through the National Scholarship Portal (scholarships.gov.in) during the open application window.",
+    "state_scope": [
+      "All-India"
+    ],
+    "source_name": "Ministry of Social Justice and Empowerment / Ministry of Tribal Affairs",
+    "source_url": "https://scholarships.gov.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "ssy",
+    "name": "Sukanya Samriddhi Yojana",
+    "short_name": "SSY",
+    "description": "Small deposit savings scheme backed by Government of India exclusively for the welfare and higher education of the girl child.",
+    "category": "Women",
+    "benefits": "High compound interest rate (currently 8.2% p.a.), tax exemptions under Section 80C, and maturity benefit on child turning 21.",
+    "eligibility_rules": [
+      {
+        "field": "gender",
+        "operator": "equals",
+        "value": "female",
+        "description": "Beneficiary must be a girl child"
+      },
+      {
+        "field": "age",
+        "operator": "less_than_or_equal",
+        "value": 10,
+        "description": "Account must be opened before girl child attains 10 years of age"
+      }
+    ],
+    "required_documents": [
+      "Birth Certificate of girl child",
+      "Identity proof of parent/guardian (Aadhaar/PAN)",
+      "Address proof of parent/guardian"
+    ],
+    "application_information": "Open an account at any Post Office branch or designated authorized commercial bank branch.",
+    "state_scope": [
+      "All-India"
+    ],
+    "source_name": "National Savings Institute / Ministry of Finance",
+    "source_url": "https://www.nsiindia.gov.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "punjab-kisan-rin-mafi",
+    "name": "Punjab Crop Loan Waiver Scheme (State Welfare)",
+    "short_name": "Punjab Kisan Rin Mafi",
+    "description": "State debt alleviation initiative providing crop loan waiver for small and marginal farmers with landholdings in the State of Punjab.",
+    "category": "Agriculture",
+    "benefits": "Waiver of outstanding crop loans up to ₹2,00,000 taken from cooperative and commercial banks.",
+    "eligibility_rules": [
+      {
+        "field": "state",
+        "operator": "equals",
+        "value": "Punjab",
+        "description": "Must be a permanent resident farmer of Punjab"
+      },
+      {
+        "field": "occupation",
+        "operator": "equals",
+        "value": "farmer",
+        "description": "Must be an active agricultural cultivator"
+      }
+    ],
+    "required_documents": [
+      "Punjab Domicile / Residence Proof",
+      "Aadhaar Card",
+      "Cooperative Bank / Commercial Bank Kisan Credit Card loan passbook",
+      "Fard / Jamabandi land holding records"
+    ],
+    "application_information": "Verified by District Administration committees through respective Primary Agricultural Credit Societies (PACS).",
+    "state_scope": [
+      "Punjab"
+    ],
+    "source_name": "Department of Agriculture and Farmers Welfare, Government of Punjab",
+    "source_url": "https://agri.punjab.gov.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "punjab-old-age-pension",
+    "name": "Punjab Financial Assistance to Elderly Citizens (Old Age Pension)",
+    "short_name": "Punjab Old Age Pension",
+    "description": "Monthly social security financial assistance provided by the Department of Social Security of Punjab to elderly senior citizens who lack sufficient livelihood sources.",
+    "category": "Senior Citizens",
+    "benefits": "Direct benefit transfer of ₹1,500 per month credited directly into beneficiary bank account.",
+    "eligibility_rules": [
+      {
+        "field": "state",
+        "operator": "equals",
+        "value": "Punjab",
+        "description": "Must be a bona fide resident of Punjab"
+      },
+      {
+        "field": "age",
+        "operator": "greater_than_or_equal",
+        "value": 60,
+        "description": "Applicant age must be at least 60 years"
+      },
+      {
+        "field": "annual_income",
+        "operator": "less_than_or_equal",
+        "value": 60000,
+        "description": "Annual family income must not exceed ₹60,000"
+      }
+    ],
+    "required_documents": [
+      "Aadhaar Card",
+      "Punjab Domicile / Residence Certificate",
+      "Age Proof (Voter Card / Matriculation Certificate / Birth Certificate)",
+      "Family Income Certificate issued by Tehsildar",
+      "Bank Account Passbook with IFSC"
+    ],
+    "application_information": "Submit application form at Sewa Kendra or online via Connect Punjab portal (connect.punjab.gov.in).",
+    "state_scope": [
+      "Punjab"
+    ],
+    "source_name": "Department of Social Security and Women & Child Development, Government of Punjab",
+    "source_url": "https://sswcd.punjab.gov.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "punjab-widow-pension",
+    "name": "Punjab Financial Assistance to Widows and Destitute Women",
+    "short_name": "Punjab Widow & Destitute Pension",
+    "description": "Social security pension for widows, destitute, and abandoned women residing in Punjab who lack independent financial livelihood.",
+    "category": "Women",
+    "benefits": "Monthly pension of ₹1,500 deposited directly into beneficiary bank account.",
+    "eligibility_rules": [
+      {
+        "field": "state",
+        "operator": "equals",
+        "value": "Punjab",
+        "description": "Must be a bona fide resident of Punjab"
+      },
+      {
+        "field": "gender",
+        "operator": "equals",
+        "value": "female",
+        "description": "Applicant must be female"
+      },
+      {
+        "field": "annual_income",
+        "operator": "less_than_or_equal",
+        "value": 60000,
+        "description": "Annual family income must not exceed ₹60,000"
+      }
+    ],
+    "required_documents": [
+      "Aadhaar Card",
+      "Punjab Domicile Certificate",
+      "Death Certificate of Husband or Certificate of Destitution",
+      "Family Income Certificate",
+      "Bank Passbook with IFSC"
+    ],
+    "application_information": "Apply online at Sewa Kendras or through the District Social Security Officer (DSSO).",
+    "state_scope": [
+      "Punjab"
+    ],
+    "source_name": "Department of Social Security, Government of Punjab",
+    "source_url": "https://sswcd.punjab.gov.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "punjab-disability-pension",
+    "name": "Punjab Financial Assistance to Disabled Persons (Divyang Pension)",
+    "short_name": "Punjab Divyang Pension",
+    "description": "Monthly state pension support for persons with disabilities (Divyangjan) residing in the State of Punjab.",
+    "category": "Senior Citizens",
+    "benefits": "Monthly financial grant of ₹1,500 per month.",
+    "eligibility_rules": [
+      {
+        "field": "state",
+        "operator": "equals",
+        "value": "Punjab",
+        "description": "Must be a bona fide resident of Punjab"
+      },
+      {
+        "field": "disability_status",
+        "operator": "equals",
+        "value": true,
+        "description": "Must possess certified disability (minimum 40%)"
+      },
+      {
+        "field": "annual_income",
+        "operator": "less_than_or_equal",
+        "value": 60000,
+        "description": "Annual family income must not exceed ₹60,000"
+      }
+    ],
+    "required_documents": [
+      "Disability Certificate / UDID Card (minimum 40% disability)",
+      "Aadhaar Card",
+      "Punjab Residence Proof",
+      "Income Certificate",
+      "Bank Passbook"
+    ],
+    "application_information": "Submit application via nearest Sewa Kendra or online on Connect Punjab portal.",
+    "state_scope": [
+      "Punjab"
+    ],
+    "source_name": "Department of Social Security, Government of Punjab",
+    "source_url": "https://sswcd.punjab.gov.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "punjab-ashirwad-scheme",
+    "name": "Punjab Ashirwad Scheme (Shagun Financial Assistance for Marriage)",
+    "short_name": "Punjab Ashirwad Scheme",
+    "description": "State financial assistance grant provided for the solemnization of marriage of daughters belonging to Scheduled Castes, Backward Classes, and Economically Weaker Sections in Punjab.",
+    "category": "Women",
+    "benefits": "Direct one-time financial assistance of ₹51,000 transferred into the bank account of the girl or her mother.",
+    "eligibility_rules": [
+      {
+        "field": "state",
+        "operator": "equals",
+        "value": "Punjab",
+        "description": "Must be a permanent resident of Punjab"
+      },
+      {
+        "field": "gender",
+        "operator": "equals",
+        "value": "female",
+        "description": "Beneficiary must be a girl / bride"
+      },
+      {
+        "field": "age",
+        "operator": "greater_than_or_equal",
+        "value": 18,
+        "description": "Bride age must be at least 18 years"
+      },
+      {
+        "field": "annual_income",
+        "operator": "less_than_or_equal",
+        "value": 32790,
+        "description": "Family annual income must not exceed ₹32,790"
+      }
+    ],
+    "required_documents": [
+      "Aadhaar Card of Bride and Parents",
+      "Punjab Domicile / Residence Proof",
+      "Caste Certificate (SC/BC) or EWS Certificate",
+      "Family Income Certificate",
+      "Proof of Age (Matriculation Certificate / Birth Certificate)",
+      "Wedding Card or Marriage Registration Certificate"
+    ],
+    "application_information": "Apply online at Ashirwad Portal (ashirwad.punjab.gov.in) or submit at Citizen Sewa Kendra at least 30 days prior to or within 30 days after marriage.",
+    "state_scope": [
+      "Punjab"
+    ],
+    "source_name": "Department of Social Justice, Empowerment and Minorities, Government of Punjab",
+    "source_url": "https://welfare.punjab.gov.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "punjab-ambedkar-post-matric",
+    "name": "Dr. B.R. Ambedkar Post Matric Scholarship Scheme for SC Students",
+    "short_name": "Punjab SC Post-Matric Scholarship",
+    "description": "Punjab state scholarship covering full institutional fee and monthly allowance for Scheduled Caste students pursuing post-matriculation or higher education in recognized institutions.",
+    "category": "Education",
+    "benefits": "100% reimbursement of tuition fees, non-refundable college fees, and monthly maintenance allowance.",
+    "eligibility_rules": [
+      {
+        "field": "state",
+        "operator": "equals",
+        "value": "Punjab",
+        "description": "Must be a bona fide resident of Punjab"
+      },
+      {
+        "field": "category",
+        "operator": "equals",
+        "value": "SC",
+        "description": "Must belong to Scheduled Caste (SC) category"
+      },
+      {
+        "field": "student_status",
+        "operator": "equals",
+        "value": true,
+        "description": "Must be actively enrolled as a post-matric student"
+      },
+      {
+        "field": "annual_income",
+        "operator": "less_than_or_equal",
+        "value": 250000,
+        "description": "Annual family income must not exceed ₹2,50,000"
+      }
+    ],
+    "required_documents": [
+      "Aadhaar Card",
+      "Punjab Domicile Certificate",
+      "SC Caste Certificate",
+      "Family Income Certificate issued by Tehsildar",
+      "Previous Academic Marksheets",
+      "Fee Receipt & Bonafide Student Certificate"
+    ],
+    "application_information": "Apply on the Dr. Ambedkar Punjab State Scholarship Portal (scholarships.punjab.gov.in).",
+    "state_scope": [
+      "Punjab"
+    ],
+    "source_name": "Department of Social Justice, Empowerment and Minorities, Punjab",
+    "source_url": "https://scholarships.punjab.gov.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "pm-fasal-bima",
+    "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "short_name": "PMFBY Crop Insurance",
+    "description": "National crop insurance flagship scheme supporting sustainable agriculture by providing comprehensive financial insurance support against crop failure due to natural calamities, pests, and unseasonal weather.",
+    "category": "Agriculture",
+    "benefits": "Comprehensive insurance claim coverage for non-preventable risks: localized calamities, standing crop yield loss, and post-harvest losses with heavily subsidized premium (1.5% for Rabi, 2% for Kharif).",
+    "eligibility_rules": [
+      {
+        "field": "occupation",
+        "operator": "equals",
+        "value": "farmer",
+        "description": "Applicant must be an active cultivator/farmer"
+      },
+      {
+        "field": "farmer_status",
+        "operator": "equals",
+        "value": true,
+        "description": "Applicant must have verified farmer standing"
+      }
+    ],
+    "required_documents": [
+      "Land Possession Certificate / Patta / Fard",
+      "Sowing Declaration Certificate",
+      "Aadhaar Card",
+      "Bank Passbook with IFSC"
+    ],
+    "application_information": "Enroll via National Crop Insurance Portal (pmfby.gov.in), authorized banks, or Common Service Centers (CSCs).",
+    "state_scope": [
+      "All-India"
+    ],
+    "source_name": "Ministry of Agriculture and Farmers Welfare, Government of India",
+    "source_url": "https://pmfby.gov.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "pm-matru-vandana",
+    "name": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+    "short_name": "PMMVY Maternity Benefit",
+    "description": "Maternity benefit cash transfer scheme providing partial wage compensation to pregnant women and lactating mothers for health checkups, nutrition, and institutional delivery.",
+    "category": "Women",
+    "benefits": "Direct cash incentive of ₹5,000 paid in installments upon registration of pregnancy, antenatal check-up, and institutional childbirth.",
+    "eligibility_rules": [
+      {
+        "field": "gender",
+        "operator": "equals",
+        "value": "female",
+        "description": "Beneficiary must be a female / mother"
+      },
+      {
+        "field": "age",
+        "operator": "greater_than_or_equal",
+        "value": 19,
+        "description": "Mother age must be at least 19 years at pregnancy"
+      }
+    ],
+    "required_documents": [
+      "Mother and Child Protection (MCP) Card",
+      "Aadhaar Card of beneficiary and spouse",
+      "Bank Account linked to Aadhaar"
+    ],
+    "application_information": "Register at the nearest Anganwadi Centre (AWC) or approved health facility, or apply online on pmmvy.wcd.gov.in.",
+    "state_scope": [
+      "All-India"
+    ],
+    "source_name": "Ministry of Women and Child Development, Government of India",
+    "source_url": "https://pmmvy.wcd.gov.in/",
+    "last_verified": "2026-03-01"
+  },
+  {
+    "id": "punjab-shehri-awas",
+    "name": "Punjab Shehri Awas Yojana (PSAY - Affordable Urban Housing)",
+    "short_name": "Punjab Shehri Awas",
+    "description": "State housing initiative providing financial grant and subsidized pucca dwelling units for homeless, slum-dwellers, and economically weaker section (EWS) urban households across municipal areas of Punjab.",
+    "category": "Housing",
+    "benefits": "Capital grant of ₹1,50,000 for individual house construction / enhancement for eligible urban EWS families.",
+    "eligibility_rules": [
+      {
+        "field": "state",
+        "operator": "equals",
+        "value": "Punjab",
+        "description": "Must be a bona fide resident of Punjab"
+      },
+      {
+        "field": "rural_or_urban",
+        "operator": "equals",
+        "value": "urban",
+        "description": "Must reside in an urban / municipal area"
+      },
+      {
+        "field": "annual_income",
+        "operator": "less_than_or_equal",
+        "value": 300000,
+        "description": "Annual family income must not exceed ₹3,00,000"
+      }
+    ],
+    "required_documents": [
+      "Punjab Residence Proof",
+      "Aadhaar Card",
+      "Land / Plot title deed or Municipal NOC",
+      "Income Certificate",
+      "Bank Account Passbook"
+    ],
+    "application_information": "Apply through municipal corporations/councils or online on Punjab Urban Planning & Development Authority (PUDA) housing portal.",
+    "state_scope": [
+      "Punjab"
+    ],
+    "source_name": "Department of Housing and Urban Development, Government of Punjab",
+    "source_url": "https://puda.gov.in/",
+    "last_verified": "2026-03-01"
+  }
+]
